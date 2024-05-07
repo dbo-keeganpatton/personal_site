@@ -142,7 +142,7 @@ def main():
         st.header(':grey[Side Projects]')
        
         # Project1
-        with st.expander("**:violet[Automated Data Scraping and Storage Pipeline]** *:grey[End2End Data Pipeline]*"):
+        with st.expander("**:violet[Automated Data Scraping and Storage Pipeline]**\n *:grey[End2End Data Pipeline]*"):
             st.write(
                 """
                 Comprehensive data pipeline leveraging BeautifulSoup for web scraping, Selenium for web automation, and AWS RDS/EC2 for robust data warehousing and automation.
@@ -164,7 +164,7 @@ def main():
             st.image(etl_icon)
 
         # Project2
-        with st.expander("**:violet[Branch Library]** *:grey[Application Development | Backend Dev]*"):
+        with st.expander("**:violet[Branch Library]**\n *:grey[Application Development | Backend Dev]*"):
             st.write(
                 """
                 Web application developed in Flask and deployed through Heroku.
@@ -191,7 +191,7 @@ def main():
         
         
         # Project3
-        with st.expander("**:violet[Dark Oura]** *:grey[Automated Self Service Analytics]*"):
+        with st.expander("**:violet[Dark Oura]**\n *:grey[Automated Self Service Analytics]*"):
             st.write(
                 """
                 Streamlit Application for Extracting Data from the Oura Ring API.
