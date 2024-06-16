@@ -10,6 +10,10 @@ linkedin_icon = './images/linkedin.png'
 etl_icon = './images/etl.png'
 version_control_icon = './images/version_ctrl.png'
 darkOura_icon = './images/DarkOura.png'
+thrasher_icon = './images/dataFlow.png'
+thrasher_viz = './images/SentimentHistogram.png'
+thrasher_dag = './images/dag.png'
+
 
 app_development = 'https://branchlibrary-8478c72f5159.herokuapp.com/'
 linkedin_link = 'https://www.linkedin.com/in/keegan-patton-739362236/'
@@ -20,7 +24,7 @@ branch_library_link = 'https://branchlibrary-8478c72f5159.herokuapp.com/'
 dark_oura_github_link = 'https://github.com/dbo-keeganpatton/ourapi'
 dark_oura_link = 'https://oura-api-client.streamlit.app/'
 retail_pipeline_github_link = 'https://github.com/dbo-keeganpatton/retail_data_pipeline'
-
+thrasher_data_pipeline_link = 'https://github.com/dbo-keeganpatton/thrasher_data_pipeline'
 
 ############################
 #        Main App          #
@@ -49,6 +53,7 @@ def main():
             PowerBI
             Tableau
             PowerAutomate
+            Apache Airflow
             Excel | Google Sheets
             """,
             language='python',
@@ -143,30 +148,59 @@ def main():
        
         # Project1
         with st.expander(
-            """**:violet[Automated Data Scraping and Storage Pipeline]** 
-            \n*:grey[End2End Data Pipeline]*
+            """**:violet[Airflow|DBT Automated Data Pipeline]** 
+            \n*:grey[Automated Natural Language Processing]*
             """):
             st.write(
                 """
-                Comprehensive data pipeline leveraging BeautifulSoup for web scraping, Selenium for web automation, and AWS RDS/EC2 for robust data warehousing and automation.
+                Robust data pipeline leveraging Apache Airflow, DBT, Postgres and NLTK for langauge processing.
                 """
             )
 
             st.code(
                 """
-                AWS Cloud Platform
-                Web Automation
-                HTML Parsing
-                Linux
+                Natural Language Processing
+                Data Orchestration
+                Data Warehousing
+                Text Mining
+                Automation
                 """,
-                language='sql',
+                language='python',
                 line_numbers=True
             )
             
-            st.page_link(retail_pipeline_github_link, label="Git Repo", icon='🔗')
-            st.image(etl_icon)
-
+            st.page_link(thrasher_data_pipeline_link, label="Git Repo", icon='🔗')
+            st.image(thrasher_dag)
+            st.image(thrasher_icon)
+            st.image(thrasher_viz)
+        
         # Project2
+        with st.expander(
+                    """**:violet[Automated Data Scraping and Storage Pipeline]** 
+                    \n*:grey[End2End Data Pipeline]*
+                    """):
+                    st.write(
+                        """
+                        Comprehensive data pipeline leveraging BeautifulSoup for web scraping, Selenium for web automation, and AWS RDS/EC2 for robust data warehousing and automation.
+                        """
+                    )
+
+                    st.code(
+                        """
+                        AWS Cloud Platform
+                        Web Automation
+                        HTML Parsing
+                        Linux
+                        """,
+                        language='sql',
+                        line_numbers=True
+                    )
+                    
+                    st.page_link(retail_pipeline_github_link, label="Git Repo", icon='🔗')
+                    st.image(etl_icon)
+        
+
+        # Project3
         with st.expander(
                 """**:violet[Branch Library]**
                 \n*:grey[Application Development | Backend Dev]*
@@ -196,7 +230,7 @@ def main():
             st.image(version_control_icon) 
         
         
-        # Project3
+        # Project4
         with st.expander(
             """**:violet[Dark Oura]**
             \n *:grey[Automated Self Service Analytics]*
